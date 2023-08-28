@@ -1,0 +1,48 @@
+
+body {
+    background-color: blanchedalmond;
+}
+
+p {
+    font-size: large;
+}
+
+p2 {
+    font-size: large;
+   
+}
+
+h1 {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul {
+    font-size: large;
+}
+
+br {
+    line-height: 50ch;
+}
+
+.pic img {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.pict img {
+    width: 500px;
+    margin-right: 4in;
+    border-radius: 5px;
+}
+
+.the-pictures {
+   display: flex;
+   column-gap: 300px;
+   
+}
+
+table {
+    table-layout:auto;
+}
+
+
