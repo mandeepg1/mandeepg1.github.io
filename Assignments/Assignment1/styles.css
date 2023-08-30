@@ -3,13 +3,8 @@ body {
     background-color: blanchedalmond;
 }
 
-p {
+p, p2 {
     font-size: large;
-}
-
-p2 {
-    font-size: large;
-   
 }
 
 h1 {
