@@ -30,7 +30,7 @@ br {
     border-radius: 5px;
 }
 
-.the-pictures {
+.pictures {
    display: flex;
    column-gap: 300px;
    
