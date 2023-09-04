@@ -1,0 +1,74 @@
+
+
+.four-links {
+    text-align: center;
+}
+
+.outlined-box {
+    display: inline-block;
+    border: 2px solid #000; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 6px; 
+    background-color: #53504d;
+}
+
+img {
+    
+    width: 500px;
+    margin-right: 4in;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+body {
+    background: #767676;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #9B111E;
+    text-align: center;
+    font-size: xx-large;
+}
+
+h2, h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #9B111E;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-size: large;
+}
+
+p {
+    color:white;
+}
+
+#mclaren-para {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#porsche-para {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background:darkgrey;
+    padding: 10px;
+}
+
+th {
+    background:#800000;
+}
+
+
