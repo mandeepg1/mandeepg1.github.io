@@ -1,0 +1,71 @@
+  /* Structure */
+
+#main-header {
+    background-color: blanchedalmond;
+}
+
+  
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.main-content, .sidebar{
+    background-color: burlywood;
+    padding: 1px;
+    margin-top: 10px;
+    
+}
+
+.sidebar {
+    background-color: aqua;
+    font-size: large;
+}
+
+
+/* Main Navigation */
+/* Typography */
+h1 {
+    text-align: center;
+}
+
+#main-nav ul{
+    padding-left: 0;
+
+}
+
+#main-nav a {
+        text-decoration: none;
+        color: white;
+}
+
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    background-color:lightsalmon;
+}
+
+#main-header a:hover {
+    color: red;
+}
+
+
+/* Larger Resolution */
+@media only screen and (min-width: 768px) {
+
+    #main-nav ul {
+        display: flex;
+    }
+
+    
+    #main-nav li {
+        flex:1;
+    }
+
+  /*  body {
+        flex-direction: column;
+    }
+
+*/
+}
