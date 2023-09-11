@@ -8,14 +8,14 @@
 
 <body>
     <header id="main-header">
-        <h1>Practicing Flexbox Assignment</h1>
+        <h1>Unofficial NFL Site</h1>
         
             <nav id="main-nav">
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#">News</a></li>
                     <li><a href="#">Standings</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Schedule</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
             </nav>
@@ -24,7 +24,8 @@
     
     <main>
         <div class="main-content">
-            <h2>Main Content</h2>
+            <div class="main-stuff">
+            <h2>Week 1 - 9/7-9/10</h2>
                 <p>Lorem ipsum dolor sit amet,
                     consectetur adipiscing elit. Mauris
                     luctus lacus augue. Duis sed tincidunt
@@ -34,26 +35,57 @@
                     </p>
             </div>
         <div class="sidebar">
-            <h3>Sidebar</h3>
+            <h3>Top Teams</h3>
                 <ul>
-                    <li>Item 1</li>
-                    <li>Item 2</li>
-                    <li>Item 3</li>
+                    <li>Team 1</li>
+                    <li>Team 2</li>
+                    <li>Team 3</li>
                 </ul>
             </div>
+        </div>
 
     </main>
     
         <div class="flex-container">
-            <section>
-                <h3>Column 1 of 2</h3>
-
-                
+            <section class="column1of2">
+                <h3>NFC-East Division</h3>
+                <div class="flex-container">
+                    <section class="column1of3">
+                        <h4>Team 1</h4>
+                    </section>
+                    <section class="column1of3">
+                        <h4>Team 2</h4>
+                    </section>
+                    <section class="column1of3">
+                        <h4>Team 3</h4>
+                    </section>
+                </div>
+            </section>
+            <section class="column1of2">
+                <h3>AFC-West Division</h3>
+                <div class="flex-container">
+                    <section class="column1of3">
+                        <h4>Team 1</h4>
+                    </section>
+                    <section class="column1of3">
+                        <h4>Team 2</h4>
+                    </section>
+                    <section class="column1of3">
+                        <h4>Team 3</h4>
+                    </section>
+                </div>
             </section>
         </div>
+       
+        <div class="placeholder">
+            <img id="logos" src="https://place-hold.it/320x100/#d3d3d3">
+            <img id="logos" src="https://place-hold.it/320x100/#d3d3d3">
+            <img id="logos" src="https://place-hold.it/320x100/#d3d3d3">
+        </div>   
 
     <footer id="main-footer">
-        <p>Goodbye?</p>
+        <p>123 Anywhere St. Columbia, SC<br>
+        &copy; unofficialNFLsite.com</p>
     </footer>
 
 </body>
