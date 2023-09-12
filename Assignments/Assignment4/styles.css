@@ -1,0 +1,39 @@
+/*Structure*/
+
+body {
+    background:#528aae;
+}
+
+h1, h2 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #1e3f66;
+    text-align: center;
+}
+
+ol {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#083b5e;
+}
+
+
+/*Typography*/
+
+
+a {
+    text-decoration: none;
+    color: #3c5c2a;
+}
+
+.assignments{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.assignment {
+    background-color: white;
+    width: 23%;
+    padding:10px;
+    margin:10px;
+    padding: 20px 10px;
+    border-radius: 5px;
+}
