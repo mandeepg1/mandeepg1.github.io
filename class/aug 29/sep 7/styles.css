@@ -3,8 +3,7 @@
   body {
     font-family: Arial, Helvetica, sans-serif;
 }
-
-#main-header,
+#main-header
 #main-footer {
     margin: auto;
     width: 80%;

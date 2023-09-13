@@ -1,0 +1,181 @@
+/*Structure*/
+body {
+    background-color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#logo {
+    width: 400px;
+    height: 150px;
+}
+
+p {
+    text-align: center;
+}
+
+.flexing1 {
+    background-color: brown;
+    color: white;
+    padding: 40px;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    padding-right: 0;
+}
+
+.flexing2 {
+    background-color: black;
+    color: white;
+}
+
+#big-pic2 {
+    width: 800px;
+    height: 600px;
+}
+#big-pic3 {
+    width: 800px;
+    height: 600px;
+}
+#big-pic5 {
+    width: 800px;
+    height: 600px;
+}
+#big-pic7 {
+    width: 800px;
+    height: 600px;
+}
+#big-pic8 {
+    width: 800px;
+    height: 600px;
+}
+
+.flexing4 {
+    background-color: grey;
+}
+
+#big-pic4 {
+    width: 350px;
+    height: 350px;
+}
+#big-pic6 {
+    width: 350px;
+    height: 350px;
+}
+
+#main-footer {
+    padding: 5px;
+}
+
+#main-header {
+    background-color: black;
+}
+
+#main-footer {
+    background-color: maroon;
+}
+
+button {
+    
+        background-color: brown;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border: none;
+        border-radius: 5px;
+    
+}
+/*Typography*/
+
+header {
+    background-color: black;
+}
+
+h1 {
+    background-color: brown;
+    color:white;
+    font-size: xx-large;
+    padding:5px;
+    margin: 5px;
+    border-radius: 5px;
+   /* margin-top: -5%; this is an idea otherwise just seperate it and stick with it until you figure it out or nah lol*/
+    
+}
+
+.top-nav a:hover {
+    background-color: #ddd;
+}
+#main-nav ul{
+    padding-left: 0;
+    text-align: center;
+    margin-top: 0%;
+}
+
+#main-nav a {
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#main-nav a:hover {
+    background-color: red;
+}
+
+input {
+    background-color: black;
+}
+
+::placeholder {
+    color: white;
+}
+
+#main-nav li {
+    list-style-type: none;
+    padding: 5px;
+    background-color: brown;
+}
+
+#main-header a:hover {
+    color: white;
+}
+#main-footer,
+#main-footer a {
+    color: white;
+}
+
+#main-footer ul {
+    padding-left: 1%;
+}
+
+#main-footer li {
+    list-style-type: none;
+}
+
+#main-footer a {
+    text-decoration: none;
+}
+/*Larger Resolution*/
+
+@media only screen and (min-width: 768px) {
+    .search-nav ul,
+    .flex-container, #main-nav ul, .flexing1, .flexing2{
+        display: flex;
+    }
+    
+    #main-nav li {
+        flex:1;
+    }
+    #main-nav ul {
+        text-align: center;
+    }
+
+
+    .flex-container {
+        justify-content: space-between;
+    }
+}
