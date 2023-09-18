@@ -27,9 +27,9 @@ const addComment = () => {
 }
 
 window.onload = () => {
-document.getElementById("button-show").onclick = showRocket;
-document.getElementById("button-hide").onclick = hideRocket;
-document.getElementById("dance-button").onclick = moveCircle;
-document.getElementById("add-comment").onclick = addComment;
+    document.getElementById("button-show").onclick = showRocket;
+    document.getElementById("button-hide").onclick = hideRocket;
+    document.getElementById("dance-button").onclick = moveCircle;
+    document.getElementById("add-comment").onclick = addComment;
 }
 

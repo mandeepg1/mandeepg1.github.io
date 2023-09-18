@@ -66,6 +66,16 @@ h3 {
     background-color: brown;
 }
 
+footer {
+    text-align: center;
+    background-color: lightseagreen;
+    height: 75px;
+    border: 2px solid darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Animation */
 @keyframes anim-circle {
     0% {
