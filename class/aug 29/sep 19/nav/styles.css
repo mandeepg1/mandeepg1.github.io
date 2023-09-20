@@ -53,6 +53,22 @@ body {
     
 }
 
+/*Form*/
+
+label, input {
+    display: block;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    padding: 5px;
+}
+
+#result section {
+    border: 1px solid red;
+    background-color: lightblue;
+}
 
 /* Typography */
 
@@ -63,6 +79,18 @@ body {
 h1 {
     text-align: center;
 }
+
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background: black;
+    margin: 6px 0;
+}
+
+.hide-small{
+    display: none;
+}
+
 
 
 /* Larger Resolution */
@@ -75,6 +103,12 @@ h1 {
    }
    .collof2 {
         flex: 1;
+   }
+   #hamburger {
+    display: none;
+   }
+   .hide-small {
+    display: block;
    }
 }
 
