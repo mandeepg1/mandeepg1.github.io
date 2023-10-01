@@ -1,0 +1,107 @@
+/*Structure*/
+
+body {
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Typography*/
+
+h1 {
+    text-align: center;
+}
+
+.container{
+    display: flex;
+}
+
+#funds-label {
+    padding-left: 20px;
+}
+#thermometer{
+    width: 100px;
+    height: 400px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+}
+
+.fill {
+    width: 100%;
+    bottom: 0;
+    background-color: red;
+    height: var(--fill-height, 0%);
+    transition: height 0.5s ease-in-out;
+    transform-origin: bottom;
+    position: absolute;
+}
+
+:root {
+    --percent:0%;
+    --man-left: 0%;
+}
+.columns {
+    width: 30%;
+    height: 300px;
+    background-color: white;
+    border: 2px solid darkcyan;
+}
+.column-2 {
+    width: 30%;
+    height: 600px;
+    background-color: lightskyblue;
+    border: 2px solid darkcyan;
+}
+
+#walkman, #runman{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: var(--man-left, 0%);
+    transition: left 0.5s linear;
+}
+
+.move-man {
+    animation-name: move-the-man;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes move-the-man {
+    100% {
+        transform: translateX(550%);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+/*Larger Resolution*/
+
+@media only screen and (min-width: 768px) {
+
+    .columns {
+        width: 50%;
+        height: 300px;
+        background-color: white;
+        border: 2px solid darkcyan;
+        margin-top: 10%;
+        
+    }
+    .column-2 {
+        width: 30%;
+        height: 600px;
+        background-color: lightskyblue;
+        border: 2px solid darkcyan;
+    }
+    .all-sections {
+        display: flex;
+        justify-content: space-around;
+    }
+}
