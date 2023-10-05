@@ -1,0 +1,55 @@
+
+/* Structure */
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.all-sections {
+    background-color: lightskyblue;
+}
+h1 {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#show-rainbow {
+    position: absolute;
+    right: 570px;
+}
+
+#rainbow-container{
+    width: 450px;               /* width: 300px -- height: 10px for the bar or strip of color */
+    height: 200px;
+    margin: auto;
+    background-color: black;
+    position: relative;
+}
+
+.fill {
+    width: 100%;
+    bottom: 0;
+    background-color: red;
+    height: var(--fill-height, 0%);
+    transition: height 0.5s ease-in-out;
+    transform-origin: bottom;
+    position: absolute;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .columns {
+        width: 50%;
+        height: 300px;
+        border: 25px solid white;
+    }
+    .all-sections {
+        display: flex;
+        justify-content: space-around;
+    }
+}
