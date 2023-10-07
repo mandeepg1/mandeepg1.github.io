@@ -1,5 +1,9 @@
 //Quote Stuff
-const quotes = ["q1", "q2", "q3", "q4", "q5"];
+const quotes = ["Two things are infinite: the universe and human stupidity; and I'm not sure about the universe. - Albert Einstein", 
+"Even if you are on the right track, you’ll get run over if you just sit there.” —Will Rogers", 
+"Aerodynamics are for people who can't build engines. - Enzo Ferrari", 
+"Death can have me, when it earns me - Kratos", 
+"If you no longer go for a gap that exists, you’re no longer a racing driver. - Ayrton Senna"];
 
 const showQuotes = () => {
     const result = document.getElementById("result");
@@ -14,36 +18,39 @@ const startQuoteCycle = () => {
     setInterval(showQuotes, 2000);
 }
 
-//Rainbow Stuff
-const colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"];
-const rainbowContainer = document.getElementById("rainbow-container");
-const potOfGold = document.getElementById("pot-of-gold");
 
-const createRainbow = () => {
-    //rainbowContainer.innerHTML = ''; // Clear previous rainbow elements
-     // Loop through the colors and add a paragraph for each one with a background color
-     for (let i = 0; i < colors.length; i++) {
-        const color = colors[i];
-        const paragraph = document.createElement("p");
-        paragraph.style.backgroundColor = color;
-       // rainbowContainer.appendChild(paragraph);
+// Rainbow Stuff
+const colors = ["red", "orange", "yellow", "green", "blue", "purple"];
 
-        // Use setTimeout to add a delay between each color stripe
-        setTimeout(() => {
-            paragraph.style.opacity = 1; // Fade in the stripe
-        }, i * 1000); // Adjust the delay (in milliseconds) as needed
+let currentRB_Color = 0;
+let rainbowContainer;
+let imageContainer;
+
+function createRainbow() {
+    if (!rainbowContainer) {
+        rainbowContainer = document.getElementById("rainbow-container");
     }
-
-    // After the rainbow is complete, show the pot of gold
-    setTimeout(() => {
-        potOfGold.style.display = "block";
-    }, colors.length * 1000); // Wait until all colors are shown
     
+    if (!imageContainer) {
+        imageContainer = document.getElementById("image-container");
+    }
+    
+    if (rainbowContainer && currentRB_Color < colors.length) {
+        const RB_Strip = document.createElement("div");
+        RB_Strip.classList.add("rainbow-strip");
+        RB_Strip.classList.add(colors[currentRB_Color]);
+        rainbowContainer.appendChild(RB_Strip);
+        currentRB_Color++;
+        setTimeout(createRainbow, 500);
+    } else if (imageContainer) {
+        console.log("Showing image container");
+        setTimeout(() => {
+            imageContainer.classList.remove("hidden");
+        }, 100);
+    }
 }
-
 
 window.onload = () => {
     startQuoteCycle();
     document.getElementById("show-rainbow").onclick = createRainbow;
 }
-
