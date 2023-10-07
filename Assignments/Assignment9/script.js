@@ -43,7 +43,6 @@ function createRainbow() {
         currentRB_Color++;
         setTimeout(createRainbow, 500);
     } else if (imageContainer) {
-        console.log("Showing image container");
         setTimeout(() => {
             imageContainer.classList.remove("hidden");
         }, 100);
