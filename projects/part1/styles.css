@@ -99,7 +99,6 @@ hr {
 }
 
 /* about */
-/* Add your CSS for the box2 container and other styles as needed */
 
 .content-wrapper {
     display: flex;
@@ -132,7 +131,6 @@ hr {
 }
 
 /* login-button */
-/* Style for the login box */
 .login-box {
     text-align: center;
     background-color: var(--secondary);
@@ -162,9 +160,9 @@ hr {
 
 .center-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 75vh; /* Adjust the height as needed */
+    justify-content: center;
+    align-items: center; 
+    height: 75vh; 
 }
 
 
@@ -193,13 +191,12 @@ hr {
     height: 100px;
     background-color: white;
     display: flex;
-    align-items: center; /* Vertically center the content */
-    padding: 10px; /* Add padding as needed */
+    align-items: center;
+    padding: 10px;
 }
 
-/* Style for the image container */
 .driver-pic {
-    flex: 1; /* Take up 50% of the width */
+    flex: 1; 
 }
 
 .driver-pic img {
@@ -209,13 +206,13 @@ hr {
     margin: auto;
 }
 
-/* Style for the text container */
+
 .about-driver {
-    flex: 1; /* Take up 50% of the width */
+    flex: 1; 
 }
 
 .about-driver p {
-    margin: 0; /* Remove default margin */
+    margin: 0; 
 }
 
 
