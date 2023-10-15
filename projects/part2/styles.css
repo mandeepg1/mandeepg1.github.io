@@ -70,8 +70,8 @@ h3 {
 }
 
 #nav-items li:hover {
-    background-color: white;
-    border-bottom: 2px solid var(--all-text);
+    background: linear-gradient( red, white);
+    border: 0.5px solid var(--nav-text);
 }
 #main-header a:hover {
     color: var(--nav-text);
@@ -269,6 +269,21 @@ h3 {
 .red-info {
     color: var(--primary);
 }
+
+/* Teams */
+
+.teams-img-table {
+    border-collapse: collapse; /* Merge cell borders */
+    width: 100%; /* Table takes up full width of its container */
+}
+
+.teams-img-table img {
+    border: 2px solid #d3d3d3; /* Add a border with 2px width and gray color */
+    border-radius: 2px; /* Apply a border radius of 2px */
+    padding: 5px; /* Add padding around each image */
+}
+
+
 
 
 @media only screen and (min-width: 768px) {
