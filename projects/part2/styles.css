@@ -186,16 +186,19 @@ h3 {
 }
 
 .about-image {
-    border: 2px solid var(--secondary);
-    border-radius: 4px;
     margin-right: 10px;
 }
    
+.about-para {
+    color: var(--all-text);
+}
 
 .text {
     flex: 2;
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 10px;
 }
 
 .text h3 {
@@ -247,9 +250,9 @@ h3 {
     flex: 2; 
 }
 
-.driver-pic {
-    max-width: 100%;
-    height: auto;
+#driver-pic {
+    width: 200px;
+    height: 200px;
 }
 
 .driver-name {
@@ -287,7 +290,7 @@ h3 {
 }
 
 .teams-text {
-    background: linear-gradient(darkred, white);
+    background: linear-gradient(darkred, darkgrey);
     display: inline-block;
 }
 
