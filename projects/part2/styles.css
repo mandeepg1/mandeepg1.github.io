@@ -204,6 +204,7 @@ h3 {
 .text h3 {
     font-size: 30px;
     margin-top: 0;
+    margin: 0;
 }
 
 h3 {
@@ -288,6 +289,12 @@ h3 {
     border-radius: 2px;
     padding: 5px;
 }
+
+#team-logos {
+    width: 150px;
+    height: 150px;
+}
+
 
 .teams-text {
     background: linear-gradient(darkred, darkgrey);
