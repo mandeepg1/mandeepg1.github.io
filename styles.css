@@ -60,6 +60,10 @@ img {
     color:white;
 }
 
+.iframe-container {
+    color: white;
+}
+
 /* Larger Resolution */
 @media only screen and (min-width: 768px) {
 
