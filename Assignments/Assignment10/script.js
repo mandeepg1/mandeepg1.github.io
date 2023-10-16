@@ -25,45 +25,39 @@ class coolToys {
     createToyElement() {
         const section = document.createElement("section");
         section.classList.add("toy");
-
+    
         const container = document.createElement("div");
         container.classList.add("container");
-
+    
         const pic = document.createElement("img");
         pic.src = `images/${this.pic}`;
         pic.alt = this.title;
         pic.classList.add("image");
-
+    
         const infoDiv = document.createElement("div");
-        infoDiv.classList.add("middle");
-        infoDiv.classList.add("text");
+        infoDiv.classList.add("info"); // Use the "info" class here instead of "middle"
         infoDiv.innerHTML = this.details;
-
+    
         container.appendChild(pic);
         container.appendChild(infoDiv);
-
+    
         section.appendChild(container);
-
-        pic.addEventListener("mouseover", () => {
-            infoDiv.style.opacity = "1";
-            pic.style.opacity = "0.3";
-        });
-
-        pic.addEventListener("mouseout", () => {
-            infoDiv.style.opacity = "0";
-            pic.style.opacity = "1";
-        });
-
+    
         return section;
     }
+    
 }
 
 const showToys = () => {
     const toys = [];
     const toyList = document.getElementById("toys");
 
-    toys.push(new coolToys("Baby Yoda", "19.99", "4-10", "4 stars", "baby-yoda.jpg"));
-    toys.push(new coolToys("Dinosaur","11.99", 4-10 , "4 stars", "dinosaur.jpg"));
+    toys.push(new coolToys("Baby Yoda", "19.99", "4-10", "5 stars", "baby-yoda.jpg"));
+    toys.push(new coolToys("Dinosaur","11.99", "4-10" , "4 stars", "dinosaur.jpg"));
+    toys.push(new coolToys("Lego","11.99", "4-10" , "4 stars", "lego.jpg"));
+    toys.push(new coolToys("Red Car","11.99", "4-10" , "4 stars", "red-car.jpg"));
+    toys.push(new coolToys("Vader & Clone Troopers","11.99", "4-10" , "4 stars", "vader-trooper.jpg"));
+    toys.push(new coolToys("Plane","11.99", "4-10" , "4 stars", "plane.png.jpg"));
 
     toys.forEach((toy) => {
         toyList.appendChild(toy.createToyElement());

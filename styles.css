@@ -17,7 +17,7 @@ ol {
 /*Typography*/
 a {
     text-decoration: none;
-    color: #3c5c2a;
+    color: black;
 }
 
 .assignments {
@@ -38,10 +38,32 @@ img {
     height: 150px; 
 }
 
+/*Projects*/
+
+.project {
+    background: linear-gradient(darkblue, lightblue);
+    padding: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.p-title {
+    color: white;
+}
+
+.p-info {
+    color:white;
+}
+
 /* Larger Resolution */
 @media only screen and (min-width: 768px) {
 
-    .assignment {
+    .assignment, .project {
         width: 23%;
     }
 }
