@@ -311,7 +311,32 @@ h3 {
     color: var(--all-text);
 }
 
+/* Results */
 
+th, tr, td {
+    border: 1px solid white;
+    color: var(--all-text);
+    background: linear-gradient(#e66465, #9198e5);
+    padding: 4px;
+}
+
+th.expand {
+    width: 150px;
+}
+
+.results-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+}
+
+.table-title {
+    font-size: 30px;
+    margin: 0;
+    margin-top: 15px;
+}
 
 @media only screen and (min-width: 768px) {
     .hidden {
