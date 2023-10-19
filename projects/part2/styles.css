@@ -78,11 +78,24 @@ h3 {
 }
 
 .main-columns {
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 3fr 7fr;
     grid-gap: 10px;
     border: 2px solid var(--all-text);
     height: 650px;
+}
+
+/* Hamburger Menu */
+
+#hamburger div {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+.hide-small {
+    display: none;
 }
 
 /*Rating Side */
@@ -187,6 +200,8 @@ h3 {
 
 .about-image {
     margin-right: 10px;
+    width: 500px;
+    height: 500px;
 }
    
 .about-para {
@@ -198,7 +213,14 @@ h3 {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 10px;
+    right: 30px;
+}
+
+#shadow-box {
+    padding: 20px; /* Adjust the padding to your preference */
+    border-radius: 10px; /* Adjust the border-radius to control the rounded edges */
+    background-color: rgba(55, 65, 81, 0.7); /* Adjust the color and alpha (transparency) value */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
 }
 
 .text h3 {
@@ -338,9 +360,105 @@ th.expand {
     margin-top: 15px;
 }
 
-@media only screen and (min-width: 768px) {
+/* Styles for mobile view (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+    /* Mobile view styles */
+    /* Index/Homepage */
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #logo {
+        display: block;
+    }
+
+    #nav-items {
+        display: block;
+    }
+
+    .hide-small {
+        display: none;
+    }
+    
+    #hamburger {
+        display: block;
+    }
+
+
+    #hamburger div {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+
+    .main-content .columns {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    #main-pic {
+        width: 300px;
+        height: 200px;
+        position: relative;
+        left: 60px;
+    }
+    .all-sections {
+        flex-direction: column;
+        position: relative;
+        left: 70px;
+    }
+
+    .columns {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* About */
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 400px;
+        height: 400px;
+        z-index: 1;
+        margin: 0 auto;
+    }
+    
+    .text > div {
+        margin-top: 10px;
+    }
+
+    .text {
+        text-align: center;
+        position: relative;
+        left: 0px;
+    }
+    /* Teams */
+    
+}
+
+/* Styles for desktop view (min-width: 601px) */
+@media only screen and (min-width: 601px) {
+    /* Desktop view styles */
     .hidden {
         display: none;
     }
+
+    #main-nav li {
+        display: inline-block;
+    }
+
+    .main-columns {
+        display: grid;
+        margin: 10px;
+    }
+
+    #nav-items {
+        display: block;
+    }
+
+
 }
 
