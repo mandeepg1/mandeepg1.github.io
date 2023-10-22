@@ -21,10 +21,6 @@ const handleFormSubmit = async (e) => {
       if (response.status === 200) {
         result.innerHTML = "Thank you for contacting us. We will be in touch shortly!";
         result.classList.add("success-message");
-        // Hide any existing validation feedback
-        form.querySelectorAll('.empty-feedback, .invalid-feedback').forEach(element => {
-          element.style.display = 'none';
-        });
       } else {
         result.innerHTML = "Sorry, your email couldn't be sent.";
         result.classList.add("error-message");
