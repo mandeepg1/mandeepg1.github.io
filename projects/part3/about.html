@@ -31,28 +31,45 @@
     </header>
 
     <div class="main-columns">
-        <div class="rating-bg">
-            <div class="rating-info">
-                <h2>Rate Us</h2>
-                <br>
-                <div class="all-rate-info">
-                    <p class="info">
-                        <label for="Name">Name:</label>
-                        <input type="text" id="Name">
-                    </p>
-                    <p class="info">
-                        <label for="comment">Comment:</label>
-                        <textarea name="comment-txt" cols="20" rows="2"></textarea><br><br>
-                    </p>
-                    <p class="info">
-                        <label for="rating-txt">Rating:</label>
-                        <input type="text" id="rating-txt" class="rating-input"> <br><br>
-                    </p>
-                    <button class="add-rating">Add Rating? or Feedback</button>
+        <div class="contact-bg">
+            <h2 class="contact-us-header">Contact Us</h2>
+            <p class="contact-us-message">
+                Please fill up the form below to send us a message.
+            </p>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="needs-validation">
+                <input type="hidden" name="access_key" value="71243c5e-e4e0-4928-ae83-69855434114a" />
+                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                <!-- Contact Form -->
+                <div class="form-field">
+                    <label for="first_name" class="form-label">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="ex: John" required class="form-input" />
                 </div>
-            </div>
-            <img id="ferrari" src="images/ferrari2.png">
+                <div class="form-field">
+                    <label for="last_name" class="form-label">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="ex: Doe" required class="form-input" />
+                </div>
+                <div class="form-field">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="ex: example123@gmail.com" required class="form-input" />
+                </div>
+                <div class="form-field">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" required class="form-input"></textarea>
+                </div>
+                <input type="hidden" name="redirect" value=""/>
+                <input type="hidden" name="subject" value="Contact From Formula One Page" />
+                
+                <input type="hidden" name="from_name" value="Formula One Contact Team" />
+    
+              <p>
+                <button type="submit">Submit Form</button>
+              </p>
+    
+              <p id="result"></p>
+            </form>
         </div>
+
         <div class="main-content">
             <div class="about-content">
                 <div class="about-image">
@@ -69,7 +86,56 @@
                     </div>
                 </div>
             </div>
+            <div class="newsletter-section">
+                <h2 id="news-header">Subscribe to Our Formula One NewsLetter!</h2>
+                <p class="news-para">Recieve all of the latest updates and news about Formula One</p>
+                <div class="the-form">
+                <form id="newsletter">
+                    <div class="news-field">
+                        <label for="first_name" class="news-label">First Name:</label>
+                        <input type="text" name="first_name" id="first_name" placeholder="ex: John" required class="news-input" />
+                    </div>
+                    <div class="news-field">
+                        <label for="email" class="news-label">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="ex: example123@gmail.com" required class="news-input" />
+                    </div>
+                    <p>
+                        <label class="news-label" for="updates">News/Updates:</label>
+                        <select class="news-input red" name="updates">
+                          <option value="daily">Daily</option>
+                          <option value="weekly">Weekly</option>
+                          <option value="monthly">Monthly</option>
+                          <option value="every-six-months">Every 6 months</option>
+                        </select>
+                      </p>
+                      <p>
+                        <label class="news-label" for="updates">Favorite Team Priority Update:</label>
+                        <select class="news-input red" name="updates">
+                          <option value="redbull-racing">Red Bull</option>
+                          <option value="mercedes">Mercedes</option>
+                          <option value="ferrari">Ferrari</option>
+                          <option value="aston-martin">Aston Martin</option>
+                          <option value="Mclaren">Mclaren</option>
+                          <option value="williams">Williams</option>
+                          <option value="alfa-romeo">Alfa Romeo</option>
+                          <option value="alpine">Alpine</option>
+                          <option value="haas">Haas</option>
+                          <option value="alphatauri">AlphaTauri</option>
+                        </select>
+                      </p>
+                      <p>
+                        <input class="checkbox" type="checkbox" name="terms" required />
+                        <label for="terms" class="news-label">I agree to the terms and services.</label>
+                      </p>                      
+                      <p>
+                        <button class="subscribe-button" type="submit">Subscribe</button>
+                      </p>
+                </form>
+                </div>
+            </div>
         </div>
     </div>
+    <script src="contact.js"></script>
+    <script src="newsletter.js"></script>
 </body>
 </html>

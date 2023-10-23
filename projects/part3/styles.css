@@ -9,7 +9,7 @@
 /* Structure */
 
 body {
-    background-color: white;
+    background-color: var(--nav-text);
 }
 
 #logo {
@@ -22,6 +22,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 5px;
+    border: 2px solid var(--all-text);
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.9);
 }
 
 /* Typography */
@@ -69,19 +72,19 @@ h3 {
     font-weight:bold;
 }
 
-#nav-items li:hover {
-    background: linear-gradient( red, white);
-    border: 0.5px solid var(--nav-text);
-}
-#main-header a:hover {
-    color: var(--nav-text);
-}
+#nav-items li {
+    transition: 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  
+  #nav-items li:hover {
+    background: var(--nav-text);
+    border-radius: 5px;
+  }
+  
 
 .main-columns {
-    /*display: grid;*/
     grid-template-columns: 3fr 7fr;
     grid-gap: 10px;
-    border: 2px solid var(--all-text);
     height: 650px;
 }
 
@@ -98,18 +101,13 @@ h3 {
     display: none;
 }
 
-/*Rating Side */
+/*Contact Side */
 
 .contact-bg {
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid var(--all-text);
     background-color: var(--primary);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
-}
-
-.contact-bg:hover {
-    opacity: 0.9;
-    background-color:#9198e5;
 }
 
 .contact-us-header {
@@ -143,7 +141,7 @@ h3 {
     padding: 12px;
     margin: 0;
     border: 2px solid var(--nav-text);
-    border-radius: 0.375rem;
+    border-radius: 6px;
     outline: none;
     transition: 0.3s;
 }
@@ -163,19 +161,25 @@ h3 {
 }
 
 .success-message {
-    color: lightgreen;
+    color: lightseagreen;
     font-family: var(--font-fam);
+    font-size: 20px;
+    background-color: #e0ffe0;
+    padding: 10px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
 }
+
 
 .error-message {
     color: black;
     font-family: var(--font-fam);
 }
 
-input:required:invalid,
-  input:focus:invalid {
-    border-radius: orange;
-  }
+.please-wait {
+    color: var(--all-text);
+    font-family: var(--font-fam);
+}
 
 .rating-info {
     background-color: var(--primary);
@@ -220,14 +224,15 @@ input:required:invalid,
 .main-content {
     background-color: var(--primary);
     position: relative;
+    border-radius: 5px;
+    border: 2px solid var(--all-text);
 }
 
-#main-pic {
+iframe {
     position: relative;
     left: 175px;
-    top: 6px;
-    border: 2px solid var(--secondary) ;
-    border-radius: 5px;
+    top: 8px;
+    border: 2px solid var(--all-text);
 }
 
 .all-sections {
@@ -251,6 +256,10 @@ input:required:invalid,
     background-color: var(--secondary);
     border-radius: 3px;
     border: 2px solid black;
+}
+
+.small-box:hover {
+    border: 2px solid white;
 }
 
 
@@ -277,6 +286,7 @@ input:required:invalid,
    
 .about-para {
     color: var(--all-text);
+    font-family: var(--font-fam);
 }
 
 .text {
@@ -303,6 +313,85 @@ input:required:invalid,
 h3 {
     align-self: flex-start;
 }
+
+/*About - Newsletter */
+
+.newsletter-section {
+    border: 2px solid white;
+    background-color: var(--nav-text);
+    width: 600px;
+    margin: 0 auto;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+.news-field {
+    margin-bottom: 1rem;
+}
+
+.news-label {
+    font-size: 15px;
+    font-family: var(--font-fam);
+    color: var(--all-text);
+    padding: 1px;
+}
+
+.news-input {
+    width: 325px;
+    padding: 12px;
+    margin: 0;
+    border: 2px solid var(--nav-text);
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+    display: flex;
+}
+
+.news-label, .news-input, .checkbox, .subscribe-button{
+    position: relative;
+    left: 125px;
+}
+
+.news-input::placeholder {
+    color: grey;
+}
+
+.news-input:focus {
+    border: 2px solid #3b82f6;
+    box-shadow: 0 0 0 2px rgba(103, 114, 229, 0.5);
+}
+
+#news-header {
+    font-size: 25px;    
+}
+
+.news-para {
+    text-align: center;
+    color: var(--all-text);
+    font-family: var(--font-fam);
+    font-size: 15px;
+}
+
+.the-form {
+    height: 400px;
+    
+}
+
+.subscribe-button {
+    left: 250px;
+}
+
+.red {
+    color: red;
+}
+
+form button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #e66465;
+}
+
 
 /* Drivers */
 
@@ -403,9 +492,10 @@ h3 {
 }
 
 .teams-desc {
-    font-size: 20px;
+    font-size: 17px;
     text-align: center;
     color: var(--all-text);
+    font-family: var(--font-fam);
 }
 
 /* Results */
@@ -415,6 +505,8 @@ th, tr, td {
     color: var(--all-text);
     background: linear-gradient(#e66465, #9198e5);
     padding: 4px;
+    font-family: var(--font-fam);
+    font-size: 14px;
 }
 
 th.expand {
@@ -510,6 +602,29 @@ th.expand {
         position: relative;
         left: 0px;
     }
+
+    .newsletter-section {
+        width: 90%; /* Adjust the width to make it responsive */
+        margin: 0 auto; /* Center horizontally */
+    }
+
+    .news-para {
+        text-align: center; /* Center-align the paragraph */
+    }
+
+    .news-label {
+        display: block; /* Display labels on a new line for mobile view */
+        margin-bottom: 10px; /* Add some spacing between labels and inputs */
+    }
+    .news-label, .news-input, .checkbox, .subscribe-button{
+        position: relative;
+        left: 0px;
+    }
+
+    .the-form {
+        height: 460px;
+    }
+
     /* Teams */
     .teams-img-table {
         flex-direction: row;

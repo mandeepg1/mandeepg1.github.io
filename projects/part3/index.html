@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/"type="image/x-icon">
-    <script src="script.index.js"></script>
     <title>Formula One</title>
 </head>
 <body>
@@ -39,7 +38,7 @@
             <p class="contact-us-message">
                 Please fill up the form below to send us a message.
             </p>
-            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="needs-validation" novalidate>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="needs-validation">
                 <input type="hidden" name="access_key" value="71243c5e-e4e0-4928-ae83-69855434114a" />
                 <input type="hidden" name="subject" value="New Submission from Web3Forms" />
                 <input type="checkbox" name="botcheck" id="" style="display: none;" />
@@ -71,11 +70,13 @@
     
               <p id="result"></p>
             </form>
-
         </div>
         
         <div class="main-content">
-            <img id="main-pic" src="images/main-pic.png">
+           <!-- <img id="main-pic" src="images/main-pic.png"> -->
+           <iframe width="560" height="315" src="https://www.youtube.com/embed/SSdsncLXLYs?si=sLnQ40uj_g5Q22Z6"
+           title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+           gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <hr>
             <h2>2023 Recent Races</h2>
             <div class="all-sections">
@@ -106,5 +107,6 @@
         </div>
     </div>
     <script src="contact.js"></script>
+    <script src="script.index.js"></script>
 </body>
 </html>
