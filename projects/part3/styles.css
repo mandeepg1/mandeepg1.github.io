@@ -316,11 +316,17 @@ h3 {
 
 /*About - Newsletter */
 
+.newsletter-container {
+    display: flex;
+    align-items: flex-start;
+}
+
 .newsletter-section {
     border: 2px solid white;
     background-color: var(--nav-text);
     width: 600px;
-    margin: 0 auto;
+    position: relative;
+    left: 10px;
     box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9);
     border-radius: 8px;
 }
@@ -347,7 +353,7 @@ h3 {
     display: flex;
 }
 
-.news-label, .news-input, .checkbox, .subscribe-button{
+.news-label, .news-input, .checkbox, .subscribe-button {
     position: relative;
     left: 125px;
 }
@@ -362,7 +368,7 @@ h3 {
 }
 
 #news-header {
-    font-size: 25px;    
+    font-size: 25px;
 }
 
 .news-para {
@@ -374,8 +380,33 @@ h3 {
 
 .the-form {
     height: 400px;
-    
 }
+
+#newsletter-results {
+    background-color: var(--nav-text);
+    border-radius: 5px;
+    border: 2px solid white;
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.9);
+    width: 250px;
+    height: 300px;
+    position: relative;
+    left: 30px;
+}
+
+h4 {
+    text-align: center;
+    font-family: var(--font-fam);
+    font-size: 15px;
+    color: var(--all-text);
+}
+
+.subscribe-confirmed {
+    font-family: var(--font-fam);
+    font-size: large;
+    text-align: center;
+    color: lightgreen;
+}
+
 
 .subscribe-button {
     left: 250px;
@@ -604,17 +635,17 @@ th.expand {
     }
 
     .newsletter-section {
-        width: 90%; /* Adjust the width to make it responsive */
-        margin: 0 auto; /* Center horizontally */
+        width: 90%;
+        margin: 0 auto;
     }
 
     .news-para {
-        text-align: center; /* Center-align the paragraph */
+        text-align: center;
     }
 
     .news-label {
-        display: block; /* Display labels on a new line for mobile view */
-        margin-bottom: 10px; /* Add some spacing between labels and inputs */
+        display: block;
+        margin-bottom: 10px;
     }
     .news-label, .news-input, .checkbox, .subscribe-button{
         position: relative;
@@ -635,6 +666,34 @@ th.expand {
     .team-row {
         justify-content: flex-start; 
     }
+
+    iframe {
+        position: relative;
+        width: 400px;
+        height: 300px;
+        left: 7px;
+    }
+
+    /* Newsletter */
+
+    .newsletter-container {
+        display: block;
+    }
+
+    #newsletter-results {
+        position: relative;
+        left: 80px;
+    }
+
+    .newsletter-section {
+        left: 0px;
+    }
+
+    .hidden {
+        display: none;
+    }
+    
+
 }
 
 /* Styles for desktop view (min-width: 601px) */
@@ -660,6 +719,5 @@ th.expand {
     .teams-text {
         max-width: 600px;
     }
-
 }
 
