@@ -1,11 +1,16 @@
 /*Structure*/
 body {
-    background: lightblue;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 h1, h2 {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #1e3f66;
+    color: white;
+    text-align: center;
+}
+
+h3 {
     text-align: center;
 }
 
@@ -23,6 +28,8 @@ a {
 .assignments {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .assignment {
@@ -31,6 +38,8 @@ a {
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
+    width: 400px;
+    height: 325px;
 }
 
 img {
@@ -41,15 +50,20 @@ img {
 /*Projects*/
 
 .project {
-    background: linear-gradient(darkblue, lightblue);
+   /* background: linear-gradient(darkblue, black); */
+   background-color: tan;
     padding: 10px;
     margin: 10px;
     padding: 10px;
     border-radius: 5px;
+    width: 400px;
+    height: 325px;
 }
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .p-title {
@@ -60,9 +74,7 @@ img {
     color:white;
 }
 
-.iframe-container {
-    color: white;
-}
+
 
 /* Larger Resolution */
 @media only screen and (min-width: 768px) {
