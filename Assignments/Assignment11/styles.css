@@ -1,0 +1,54 @@
+body {
+    background-color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    transition: transform .2s;
+}
+
+img:hover {
+    transform: scale(1.5);
+}
+
+section section2 h2 {
+    color: black;
+    position: relative;
+    right: 10px;
+}
+
+section section2 {
+    flex: none;
+    position: relative;
+    left: 10px;
+}
+
+section {
+    background-color: darkcyan;
+    margin: 20px;
+    border-top-width: 0;
+    border-right-width: 10px;
+    border-bottom-width: 10px;
+    border-left-width: 0;
+    border-style: outset;
+    border-color: #3F6086;
+    display: flex;
+}
+
+section img {
+    width: 200px;
+    height: 200px;
+    border: 6px solid red;
+}
+
+section h2 {
+    color: black;
+    margin: 10px;
+}
+
+section p {
+    color: black;
+    font-size: 17px;
+    width: 60%;
+}
+
