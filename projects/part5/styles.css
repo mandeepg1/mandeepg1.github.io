@@ -460,11 +460,11 @@ form button {
     margin-right: 10px;
 }
 
-.about-driver {
+#about-driver {
     flex: 2; 
 }
 
-#driver-pic {
+.driver-pic {
     width: 200px;
     height: 200px;
 }
@@ -486,6 +486,7 @@ form button {
 .red-info {
     color: var(--primary);
 }
+
 
 /* Teams */
 
