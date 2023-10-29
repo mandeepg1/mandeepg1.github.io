@@ -20,6 +20,7 @@ const showDrivers = async () => {
 
 const getDriver = (driver) => {
     const section = document.createElement("section");
+    section.classList.add("driver-box");
 
     const driverImg = document.createElement("img");
     driverImg.classList.add("driver-pic");

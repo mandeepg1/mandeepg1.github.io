@@ -5,6 +5,20 @@
       "team": "Mercedes AMG Motorsport",
       "career-stats": ["103 Wins", "196 Podiums", "4599.5 Points"],
       "img":"images/lewis-hamilton.png"
+    },
+    {
+      "name":"Max Verstappen",
+      "age": "26",
+      "team": "Red Bull Racing",
+      "career-stats": ["49 Wins", "93 Podiums", "2444.5 Points"],
+      "img":"images/max-v.png"
+    },
+    {
+      "name":"Charles Leclerc",
+      "age": "26",
+      "team": "Ferrari",
+      "career-stats": ["5 Wins", "27 Podiums", "1013 Points"],
+      "img":"images/charles.png"
     }
 
 ]
