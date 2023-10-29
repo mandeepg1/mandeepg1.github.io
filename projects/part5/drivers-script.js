@@ -48,7 +48,7 @@ const getDriverInfo = (driver) => {
     p.classList.add("driver-info", "red-info");
     
     p.innerHTML = `<strong><span class="black-text">Age:</span></strong> ${driver.age}<br> <strong><span class="black-text">Team: </span></strong>${driver.team}<br>
-    <strong><span class="black-text">Career Stats:</span></strong> ${driver.stats}<br>`;
+    <strong><span class="black-text">Career Stats:</span></strong> ${driver["career-stats"].join(', ')}<br>`;
     
     return p;
 }
