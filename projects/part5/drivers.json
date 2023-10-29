@@ -1,0 +1,10 @@
+[
+    {
+      "name":"Lewis Hamilton",
+      "age": "38",
+      "team": "Mercedes AMG Motorsport",
+      "career-stats": ["103 Wins", "196 Podiums", "4599.5 Points"],
+      "img":"images/lewis-hamilton.png"
+    }
+
+]

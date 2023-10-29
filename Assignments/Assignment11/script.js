@@ -1,6 +1,5 @@
 const getMovies = async () => {
     const url = "https://portiaportia.github.io/json/movies.json";
-    const imgURL = "images/the-godfather.jpg";
 
     try {
         const response = await fetch(url);
