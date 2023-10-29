@@ -1,9 +1,5 @@
 /*Structure*/
 
-:root {
-    --background-color: red; /* figure something out for color also dont need this root lol */
-}
-
 body {
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
@@ -16,6 +12,7 @@ h1, h2 {
 }
 
 h3 {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
@@ -47,19 +44,31 @@ a {
     height: 325px;
 }
 
+.assignment:hover {
+    transform: scale(1.1);
+    background-color: #00A19C;
+    color: white;
+}
+
 img {
     width: 300px;
     height: 150px;
     margin: 0;
     border-radius: 5px;
-    border: 2px solid var(--background-color);
+    border: 2px solid black;
+    position: relative;
+    left: 4px;
+}
+
+img:hover {
+    border: 2px solid white;
 }
 
 /*Projects*/
 
 .project {
    /* background: linear-gradient(darkblue, black); */
-    background-color: tan;
+    background-color: cornflowerblue;
     padding: 10px;
     margin: 10px;
     padding: 10px;
@@ -67,6 +76,11 @@ img {
     width: 400px;
     height: 325px;
 }
+
+.project:hover {
+    transform: scale(1.1);
+}
+
 .projects {
     display: flex;
     flex-wrap: wrap;
