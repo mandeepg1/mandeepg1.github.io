@@ -426,23 +426,16 @@ form button {
 
 /* Drivers */
 
-.white-bg-box, .white-bg-box2, .white-bg-box3{
+.white-bg-box {
     background-color: var(--all-text);
     width: 800px;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    padding: 8px;
+    padding: 10px;
     position: relative;
     margin: 10px;
 }
 
-.white-bg-box {
-    top: 10px;
-}
-
-.white-bg-box3{
-    bottom: 10px;
-}
 
 .driver-content {
     display: flex;
@@ -453,11 +446,7 @@ form button {
 .driver-box {
     display: flex;
     align-items: center;
-}
-
-.drivers {
-    flex: 1;
-    margin-right: 10px;
+    
 }
 
 #about-driver {
@@ -467,6 +456,13 @@ form button {
 .driver-pic {
     width: 200px;
     height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform .2s;
+}
+
+.driver-pic:hover {
+    background-color: var(--nav-text);
+    transform: scale(1.2);
 }
 
 .driver-name {
@@ -477,6 +473,7 @@ form button {
 .driver-info {
     font-family: var(--font-fam);
     font-size: 16px;
+    padding: 30px;
 }
 
 .black-text {
