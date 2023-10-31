@@ -21,6 +21,18 @@ ol {
     color: #083b5e;
 }
 
+.link1, .link2 {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    color: black;
+}
+
+.link1:hover, .link2:hover {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: white;
+}
+
 /*Typography*/
 a {
     text-decoration: none;
@@ -67,7 +79,6 @@ img:hover {
 /*Projects*/
 
 .project {
-   /* background: linear-gradient(darkblue, black); */
     background-color: cornflowerblue;
     padding: 10px;
     margin: 10px;
