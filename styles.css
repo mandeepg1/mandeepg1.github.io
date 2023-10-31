@@ -24,13 +24,18 @@ ol {
 .link1, .link2 {
     display: flex;
     justify-content: space-around;
-    padding: 10px;
+    padding: 8px;
     color: black;
+    background-color: #00A19C;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
 }
 
 .link1:hover, .link2:hover {
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: white;
+    border: 1px solid beige;
 }
 
 /*Typography*/
