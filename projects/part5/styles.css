@@ -262,6 +262,29 @@ iframe {
     border: 2px solid white;
 }
 
+.track-img {
+    height: 350px;
+    width: 350px;
+    border: 2px solid black;
+    
+}
+
+.history-info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hist-track {
+    color: var(--all-text);
+    font-family: var(--font-fam);
+    font-size: 18px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(243, 247, 125, 0.7);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    width: 700px;
+}
 
 #track-pic {
     margin: 0 auto;
@@ -609,6 +632,9 @@ th.expand {
         margin-left: 0;
         margin-top: 10px;
     }
+
+    /* Grand Prix */
+  
 
     /* About */
     .about-content {
