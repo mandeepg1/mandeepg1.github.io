@@ -555,10 +555,14 @@ form button {
 th, tr, td {
     border: 1px solid white;
     color: var(--all-text);
-    background: linear-gradient(#e66465, #9198e5);
+    background-color: rgba(243, 247, 125, 0.36);
     padding: 4px;
     font-family: var(--font-fam);
     font-size: 14px;
+}
+
+td {
+    background-color: #71a2f0;
 }
 
 th.expand {
