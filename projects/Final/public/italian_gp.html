@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formula One</title>
+</head>
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <a href="index.html">
+                <img id="logo" src="images/f1-logo.jpg">
+            </a>
+            <h1>Formula One</h1>
+            <nav id="main-nav">
+                <div id="hamburger" class="hidden">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <ul id="nav-items">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="drivers.html">Drivers</a></li>
+                    <li><a href="teams.html">Teams</a></li>
+                    <li><a href="results.html">Results</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="main-columns">
+        <div class="contact-bg">
+            <h2 class="contact-us-header">Contact Us</h2>
+            <p class="contact-us-message">
+                Please fill up the form below to send us a message.
+            </p>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="needs-validation">
+                <input type="hidden" name="access_key" value="71243c5e-e4e0-4928-ae83-69855434114a" />
+                <input type="hidden" name="subject" value="New Submission from Web3Forms" />
+                <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                <!-- Contact Form -->
+                <div class="form-field">
+                    <label for="first_name" class="form-label">First Name:</label>
+                    <input type="text" name="first_name" id="first_name" placeholder="ex: John" required class="form-input" />
+                </div>
+                <div class="form-field">
+                    <label for="last_name" class="form-label">Last Name:</label>
+                    <input type="text" name="last_name" id="last_name" placeholder="ex: Doe" required class="form-input" />
+                </div>
+                <div class="form-field">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="ex: example123@gmail.com" required class="form-input" />
+                </div>
+                <div class="form-field">
+                    <label for="message" class="form-label">Message:</label>
+                    <textarea id="message" name="message" required class="form-input"></textarea>
+                </div>
+                <input type="hidden" name="redirect" value=""/>
+                <input type="hidden" name="subject" value="Contact From Formula One Page" />
+                
+                <input type="hidden" name="from_name" value="Formula One Contact Team" />
+    
+              <p>
+                <button type="submit">Submit Form</button>
+              </p>
+    
+              <p id="result"></p>
+            </form>
+        </div>
+
+        <div class="main-content">
+            <h2 class="contact-us-header">Italian Grand Prix</h2>
+            <div class="history-info">
+                <img class="track-img" src="images/monza-c.jpg">
+                <p class="hist-track">The Italian Grand Prix, one of the oldest and most iconic races in Formula One, has a rich history dating back to the inaugural season in 1950. Monza's Autodromo Nazionale, commonly known as Monza, has been the traditional home of the Italian Grand Prix. The circuit is celebrated for its high-speed straights and historic banked curves, making it a favorite among drivers and fans. Ferrari, the legendary Italian team, has had a significant presence at the race, and the passionate Tifosi (Ferrari fans) add to the unique atmosphere.</p>
+            </div>
+        </div>
+    </div>
+    <script src="contact.js"></script>
+    <script src="newsletter.js"></script>
+</body>
+</html>
